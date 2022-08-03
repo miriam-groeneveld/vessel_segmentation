@@ -21,9 +21,7 @@ docker run --rm \
         -v $SCRIPTPATH/test/expected_output/:/expected_output/ \
         biocontainers/simpleitk:v1.0.1-3-deb-py3_cv1 python3 -c """
 import SimpleITK as sitk
-import os
 
-print(os.listdir('/output/images/'))
 output = sitk.ReadImage('/output/images/01_test.tif')
 expected_output = sitk.ReadImage('/expected_output/images/01_test.tif')
 
