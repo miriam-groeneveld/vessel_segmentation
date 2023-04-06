@@ -16,6 +16,7 @@ from evalutils.validators import (
 class Vesselsegmentation(SegmentationAlgorithm):
     def __init__(self):
         super().__init__(
+            output_path=Path("/output/images/vessel-segmentation/"),
             validators=dict(
                 input_image=(
                     UniqueImagesValidator(),
