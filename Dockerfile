@@ -1,4 +1,4 @@
-FROM pytorch/pytorch
+FROM pytorch/pytorch:2.0.0-cpu
 
 
 RUN groupadd -r algorithm && useradd -m --no-log-init -r -g algorithm algorithm
