@@ -80,7 +80,7 @@ class Vesselsegmentation(SegmentationAlgorithm):
         out = (out * 255).astype(np.uint8)
         out = SimpleITK.GetImageFromArray(out)  # convert numpy array to SimpleITK image for grand-challenge.org
 
-        print("==> Forward pass done")
+        print("==> Prediction done")
 
         return out
 
