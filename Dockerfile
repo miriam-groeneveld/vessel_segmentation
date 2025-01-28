@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.0.0
+FROM pytorch/pytorch:2.0.0-cuda11.7-cudnn8-runtime
 
 
 RUN groupadd -r algorithm && useradd -m --no-log-init -r -g algorithm algorithm
